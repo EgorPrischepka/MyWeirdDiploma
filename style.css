@@ -1,0 +1,759 @@
+body 
+{
+	font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
+	font-size: 12pt; /* Размер основного шрифта в пунктах  */
+	background-color: #f0f0f0; /* Цвет фона веб-страницы */
+	color: #333; /* Цвет основного текста */ 
+	min-width: 1000px;
+	margin: auto;
+}
+
+h1
+{
+	font-size: 24pt;
+}
+
+a 
+{
+	color: #0169D3;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: #0169D3;
+}
+
+/*Мейн*/
+.wrapper
+{
+	margin: auto;
+}
+
+.mainwrapper
+{
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	padding: 15px;
+	display: inline-block;
+	width: 95%;
+}
+
+.cancellink
+{
+	text-decoration: none;
+	color: black;
+}
+
+.cancellink:hover
+{
+	text-decoration: none;
+}
+
+.indexmessage
+{
+	position: absolute;
+	top: 100px;
+}
+
+.infoboard
+{
+	padding: 20px;
+}
+
+
+.deckgallery
+{	
+	position: relative;
+	left: 50%;
+    transform: translateX(-50%);
+	width: 90%;
+	justify-content: space-between;
+}
+
+.deckpreview
+{
+	border-radius: 20px;
+	box-shadow: 0 0 10px -3px;
+	background-color: #eee2dc;
+	width: 200px;
+	height: 170px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.deckimage
+{
+	border-radius: 15px;
+}
+
+.deckcase
+{
+	margin-left: -2px;
+	position: absolute;
+	text-align: center;
+	font-size: 16pt;
+}
+
+.header
+{
+	z-index: 100;
+	font-size: 18pt;
+	box-shadow: 0 1px 10px -3px;
+	top: -10px;
+	position: relative;
+	left: 0px;
+	background-color: #eee2dc;
+	width: 100%;
+	height: 60px;
+	display: inline-table;
+	justify-content: space-between;
+}
+
+.headerlink
+{
+	text-decoration: none;
+	margin-top: 50px;
+    transform: translateY(-50%);
+	margin-left: 20px;
+	padding: 2px;
+	display: inline-table;
+	position: relative;
+	height: 30px;
+}
+
+.headerlink:hover
+{
+	text-decoration: none;
+	background-color: #d8bfd8;
+}
+
+.pagelisting
+{
+	border-radius: 10px;
+	box-shadow: 0 0 10px -3px;
+	background-color: #eee2dc;
+	padding: 10px;
+	position: absolute;
+	bottom: -50px;
+	font-size: 18pt;
+	justify-content: space-between;
+}
+
+.cardpagelisting
+{
+	text-align: center;
+	margin-top: -5px;
+	background-color: #eee2dc;
+	padding: 10px;
+	font-size: 18pt;
+	justify-content: space-between;
+}
+
+
+.pagelisted
+{
+	padding: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.pagelisted:hover
+{
+	text-decoration: none;
+	background-color: #d8bfd8;
+}
+
+.footer
+{
+	position: fixed;
+	background-color: #eee2dc;
+	bottom: 0px;
+	left: 50%;
+	height: 100px;
+	width: 100%;
+	transform: translateX(-50%);
+}
+
+.cardupload
+{
+	top: 25px;
+	position: relative;
+}
+
+.info
+{
+	position: relative;
+	background-color: #eee2dc;
+	width: 25%;
+}
+
+.upload 
+{
+    position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.updatable
+{
+	background-color: #eee2dc;
+	border: none;
+	border-collapse: collapse;
+}
+
+
+/*Подробности о карте*/
+
+.cardtext
+{
+		width: 372px;
+		left: 25px;
+		top: 20px;
+		padding: 10px;
+		line-height: 1.5;
+		position: absolute;
+		margin-left: 335px;
+		background-color: #eee2dc;
+		box-shadow: 0 0 10px -3px;
+		border-radius: 15px;
+}
+
+.cardbox
+{
+	top: 100px;
+	position: absolute;
+	width: 850px;
+	min-height:460px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.cardimage
+{
+	border-radius: 20px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 520px;
+	width: 372px;
+	z-index: 1999;
+}
+
+.cardpreview
+{
+	width: 300px;
+	border-radius: 15px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.cardtitle
+{
+	font-size: 18pt;
+}
+
+.cardlegalitygreen
+{
+	font-size: 18pt;
+	background-color: #00db6a;
+	color:white;
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+	width: 120px;
+}
+
+.cardlegalityred
+{
+	font-size: 18pt;
+	background-color: #ff5349;
+	color:white;
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+	width: 120px;
+}
+
+/*Подробности о колоде*/
+.deckbox
+{
+	margin: auto;
+	width: 484px;
+	background-color: #eee2dc;
+	border-radius: 20px;
+	box-shadow: 0 0 10px -3px;
+}
+
+.deckeditor
+{
+	font-family: Arial, Verdana,  sans-serif;
+	font-size: 12pt;
+	width: 300px;
+	height: 500px;
+	resize: none;
+	float: left;
+}
+
+.deckeditbox
+{
+	position: relative;
+	float: right;
+	width: 484px;
+	background-color: #eee2dc;
+	border-radius: 20px;
+	box-shadow: 0 0 10px -3px;
+}
+
+.decktitle
+{
+	vertical-align: middle;
+	position:relative;
+	height: 30px;
+	padding: 10px;
+}
+
+.deckname
+{
+	top: -10px;
+	position:absolute;
+	font-size: 18pt;
+}
+
+.deckcontent
+{
+	position:relative;
+	padding:10px;
+}
+
+.decklegalitymessage
+{
+	margin-top: 25px;
+	position: relative;
+	padding: 10px;
+}
+
+.imagepreview span
+{
+    border-radius: 5px 5px 5px 5px;
+    visibility: hidden;
+    position: absolute;
+    left: 200px;
+    background: #fff;
+    box-shadow: -2px 2px 10px -1px #333; 
+}
+ 
+.imagepreview:hover span
+{
+	visibility: visible;
+}
+
+.deckwarning
+{
+	background-color: #FF0000;
+	position: absolute;
+	width: 500 px;
+	padding: 10px;
+}
+
+.deckcommander
+{
+	font-family: Arial, Verdana,  sans-serif;
+	font-size: 12pt;
+	height: 24px;
+	width: 300px;
+	resize: none;
+}
+
+.deckeditspace
+{
+	position: relative;
+	width: 900px;
+	display: inline-block;
+}
+
+.deckspace
+{
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	top: 100px;
+}
+
+.deckedit
+{
+	position: relative;
+	float: left;
+	padding: 10px;
+	width: 310px;
+	height: 670px;
+	margin-bottom: 15px;
+	background-color: #eee2dc;
+	border-radius: 20px;
+	box-shadow: 0 0 10px -3px;
+}
+
+.testpreview
+{
+	margin-left: 425px;
+	top: 100px;
+	padding: 10px;
+	position: absolute;
+	background-color: #eee2dc;
+	border-radius: 20px;
+	box-shadow: 0 0 10px -3px;
+}
+
+.imagegallery
+{
+	padding-top: 25px;
+	top: 100px;
+	width: 75%;
+	border-radius: 20px;
+	box-shadow: 0 0 10px -3px;
+	position: absolute;
+	background-color: #eee2dc;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.cardsearch
+{
+	font-family: Arial, Verdana,  sans-serif;
+	font-size: 12pt;
+	width: 600px;
+	height: 24px;
+	resize:none;
+}
+
+/*Логин*/
+.loginpopup
+{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    position:absolute;
+    top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	z-index: 101;
+	
+}
+
+.loginpopup .login
+{
+	margin: 200px auto 0px auto;
+    width:200px;
+    height: 140px;
+    padding:10px;
+    background-color: #eee2dc;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+/*Постинг*/
+.submitpost
+{
+	font-family: Arial, Verdana,  sans-serif;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    position:absolute;
+    top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	z-index: 101;
+}
+
+.postname
+{
+	font-size: 18pt;
+	height: 36px;
+	resize: none;
+	width: 780px;
+}
+
+.submitpost .posting
+{
+	font-size: 18pt;
+	margin: 200px auto 0px auto;
+	width: 790px;
+    padding:10px;
+    background-color: #eee2dc;
+    border-radius:15px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.postcontent
+{
+	height: 400px;
+	width: 780px;
+	resize: none;
+	font-size: 18pt;
+}
+
+.postbutton
+{
+	border:none;
+	background-color: #eee2dc;
+	box-shadow: 0px 0px 5px #000;
+	font-size: 18pt;
+	border-radius:5px;
+	margin-left: 20px;
+}
+
+.postbutton:hover
+{
+	background-color: #d8bfd8;
+}
+
+.buttonfield
+{
+	position: relative;
+	bottom: -20px;
+	margin-left: -20px;
+	justify-content: space-between;
+	width: 300px;
+}
+
+/*Новости*/
+.newspage
+{
+	position: absolute;
+	top: 100px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px -3px;
+	background-color: #eee2dc;
+	min-height: 800px;
+	width: 780px;
+	margin-left: 25px;
+}
+
+.newswrapper
+{
+	margin-left: 15px;
+}
+
+.newscontent
+{
+	margin-top: 15px;
+	width: 750px;
+}
+
+.newstumb
+{
+	height: 200px;
+	width: 750px;
+}
+
+.newstumbmain
+{
+	height: 200px;
+	width: 750px;
+	border-radius: 10px;
+}
+
+.newsposted
+{
+	position: absolute;
+	bottom: 0px;
+}
+
+.newsgallery
+{
+	float: left;
+	height: 475px;
+	width: 780px;
+}
+
+.lastnews
+{
+	position: absolute;
+	width: 750px;
+	height: 280px;
+	border-radius: 25px;
+	padding: 15px;
+	box-shadow: 0 0 10px -3px;
+	background-color: #eee2dc;
+}
+
+.newsarchive
+{
+	position: absolute;
+	top: 100px;
+	padding: 10px;
+	margin-left: 25px;
+	box-shadow: 0 0 10px -3px;
+	background-color: #eee2dc;
+	border-radius: 25px;
+}
+
+.newstable th
+{
+	background-color: #d8bfd8;
+}
+
+.newstable td
+{
+	background-color: #cbbac5;
+}
+
+.gotoarchive
+{
+	margin: auto;
+	top: 425px;
+	position: absolute;
+	background-color: #eee2dc;
+	border: none;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 28px;
+	box-shadow: 0 0 10px -3px;
+	border-radius: 10px;
+}
+
+/*Деки в мейне*/
+.lastdeckgallery
+{
+	width: 220px;
+	float:right;
+	position: relative;
+}
+
+/*Профиль и админка по соседству*/
+.profilepage
+{
+	position: relative;
+	top: 50px;
+	width: 600px;
+	min-height: 500px;
+	float: left;
+}
+
+.userdecks
+{
+	background-color: #eee2dc;
+	box-shadow: 0 0 10px -3px;
+	border-radius: 10px;
+	padding: 10px;
+	width: auto;
+}
+
+.usertable
+{
+	background-color: #eee2dc;
+	box-shadow: 0 0 10px -3px;
+	border-radius: 10px;
+	padding: 10px;	
+	width: auto;
+}
+
+.usersettings
+{
+	top: 50px;
+	position:relative;
+	float: right;
+}
+
+.userpass
+{
+	background-color: #eee2dc;
+	box-shadow: 0 0 10px -3px;
+	border-radius: 10px;
+	padding: 10px;	
+	width: auto;
+	height: 125px;
+}
+
+.cardbaseupdate
+{
+	background-color: #eee2dc;
+	box-shadow: 0 0 10px -3px;
+	border-radius: 10px;
+	padding: 10px;
+	width: auto;
+	height: 275px;
+}
+
+.profiletable
+{
+	font-size: 18pt;
+}
+
+.buttonaction
+{
+	font-size: 18pt;
+	border: none;
+	box-shadow: 0 0 5px -3px;
+	border-radius: 5px;
+	background-color: #eee2dc;
+}
+
+.linkaction
+{
+	text-decoration: none;
+}
+
+.linkaction:hover
+{
+	text-decoration: none;
+	background-color: #d8bfd8;
+}
+
+.changebutton
+{
+	position: absolute;
+	bottom:10px;
+	border:none;
+	background-color: #eee2dc;
+	box-shadow: 0px 0px 5px #000;
+	font-size: 18pt;
+	border-radius:5px;
+	margin-left: 20px;
+}
+
+.changebutton:hover
+{
+	background-color: #d8bfd8;
+}
+
+.aboutyourdeck
+{
+	font-size: 18pt;
+	position: absolute;
+	top: 100px;
+	right: 300px;
+}
+
+.aboutdeckcondition
+{
+	font-size: 18pt;
+	margin-top: 20px;
+}
+
+.abouttl
+{
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 20px;
+	box-shadow: 0 0 10px -3px;
+	background-color: #eee2dc;
+	width: 780px;
+	margin-left: 25px;
+	padding: 25px;
+}
